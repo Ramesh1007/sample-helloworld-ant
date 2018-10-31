@@ -28,12 +28,12 @@
         </jar>
     </target>
 
-    <target name="run" depends="jar">
+    <target name="runn" depends="jar">
         <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
     </target>
 
     <target name="clean-build" depends="clean,jar"/>
 
-    <target name="main" depends="clean,run"/>
+    <target name="main" depends="clean,runn"/>
 
 </project>
